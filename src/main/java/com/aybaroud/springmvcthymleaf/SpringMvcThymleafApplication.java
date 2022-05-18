@@ -19,9 +19,9 @@ public class SpringMvcThymleafApplication {
 	@Bean
 	CommandLineRunner commandLineRunner(PatientRepository patientRepository){
 		return args -> {
-			patientRepository.save(new Patient(null,"Antoine", new Date(),false,12));
-			patientRepository.save(new Patient(null,"Laura", new Date(),true,18));
-			patientRepository.save(new Patient(null,"Jack", new Date(),false,14));
+			patientRepository.save(new Patient(null,"Antoine", new Date(),false,112));
+			patientRepository.save(new Patient(null,"Laura", new Date(),true,118));
+			patientRepository.save(new Patient(null,"Jack", new Date(),false,214));
 
 			patientRepository.findAll().forEach(
 					p->{
